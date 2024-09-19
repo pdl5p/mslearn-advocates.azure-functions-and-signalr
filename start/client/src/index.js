@@ -4,7 +4,9 @@ import "./style.css";
 function getApiUrl() {
   const backend = process.env.BACKEND_URL;
 
-  const url = backend ? `${backend}` : ``;
+  const url = backend
+    ? `${backend}`
+    : `https://pdl-signalr-api.azurewebsites.net`;
   return url;
 }
 
