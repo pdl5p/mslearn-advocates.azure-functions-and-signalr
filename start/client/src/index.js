@@ -1,8 +1,8 @@
 import "./style.css";
-//import { BACKEND_URL } from "./env";
+import { BACKEND_URL } from "./env";
 
 function getApiUrl() {
-  const backend = process.env.BACKEND_URL;
+  const backend = BACKEND_URL;
 
   const url = backend ? `${backend}` : ``;
   return url;
