@@ -28,7 +28,7 @@ export async function setPrice(
 }
 
 app.timer("setPrice", {
-  schedule: "*/12 * * * * *",
+  schedule: "*/5 * * * * *",
   extraOutputs: [cosmosOutput],
   handler: setPrice,
 });
